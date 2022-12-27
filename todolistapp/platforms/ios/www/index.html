@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+        <title>Todo List App</title>
+    </head>
+    <body>
+       <div data-role="page">
+        <div data-role="header">
+            <h2> Todo List App </h2>
+        </div>
+       <div class="ui-content" data-role="main">
+        <form>
+            <fieldset>
+                <label for="task"> Ajouter une nouvelle tâche</label>
+                <input type="text" id="task" placeholder="Nouvelle tâche">
+
+                <input type="button" id="addButton" value="Ajouter" data-theme="b" data-icon="plus" data-iconshadow="true" data-iconpos="right">
+                <input type="button" id="resetButton" value="Réinitialiser" data-theme="b" data-icon="delete" data-iconshadow="true" data-iconpos="right">
+            </fieldset>
+
+            <fieldset>
+              <legend id="tasktitle" hidden=""true> Liste des tâches </legend>
+              
+              <fieldset>
+                    <h2> Tâches en cours</h2>
+                <ul data-role="listview" id="taskListOnGoing" data-inset="true">
+                    
+                </ul>
+                
+              </fieldset>
+              
+              <fieldset>
+                <h2> Tâches terminées</h2>
+                <ul data-role="listview" id="taskListDone" data-inset="true">
+                    
+                </ul>
+              </fieldset>
+              
+            </fieldset>
+        </form>
+       </div>
+        <div data-role="footer" data-position="fixed">
+            <h2> Made with 🖤 by Kaizoku</h2>
+        </div>
+       </div>
+       
+       <script src="js/index.js"></script>
+    </body>
+</html>

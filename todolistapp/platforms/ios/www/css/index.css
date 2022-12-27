@@ -1,0 +1,13 @@
+body {
+    width: 100%;
+    font-family: caret;
+}
+
+h2 {
+    color: deeppink;
+}
+
+.done {
+    text-decoration: line-through;
+    background-color: darkred;
+}
